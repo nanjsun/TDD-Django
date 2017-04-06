@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
@@ -10,3 +11,12 @@ urlpatterns = patterns('',
 
 #    url(r'^admin/', include(admin.site.urls)),
 )
+=======
+from django.conf.urls import url
+from lists import views
+
+urlpatterns = [
+    url(r'^$', views.home_page, name='home'),
+]
+
+>>>>>>> chapter6
